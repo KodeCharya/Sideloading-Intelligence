@@ -1,0 +1,1148 @@
+{
+ "n_queries": 60,
+ "n_clear": 40,
+ "n_ambiguous": 10,
+ "n_offtopic": 10,
+ "top1_accuracy_clear": 0.6,
+ "top2_accuracy_clear": 0.75,
+ "top1_accuracy_ambiguous": 0.4,
+ "top2_accuracy_ambiguous": 0.6,
+ "per_domain": {
+  "linux": {
+   "top1": "9/10",
+   "top2": "10/10"
+  },
+  "networking": {
+   "top1": "5/10",
+   "top2": "10/10"
+  },
+  "python": {
+   "top1": "4/10",
+   "top2": "4/10"
+  },
+  "cybersecurity": {
+   "top1": "6/10",
+   "top2": "6/10"
+  }
+ },
+ "top1_score_correct": {
+  "n": 28,
+  "mean": 0.14136043100564086,
+  "median": 0.14492484029576375,
+  "stdev": 0.08240346825658496,
+  "min": 0.0,
+  "max": 0.3237169428268408
+ },
+ "top1_score_incorrect": {
+  "n": 22,
+  "mean": 0.04683541746733456,
+  "median": 0.0,
+  "stdev": 0.07641914921154253,
+  "min": 0.0,
+  "max": 0.23698394238727544
+ },
+ "top1_score_offtopic": {
+  "n": 10,
+  "mean": 0.03831917965034844,
+  "median": 0.0,
+  "stdev": 0.08078392384285042,
+  "min": 0.0,
+  "max": 0.19159589825174217
+ },
+ "fallback_sweep": [
+  {
+   "threshold": 0.0,
+   "routed": 60,
+   "wrong_invocations": 32,
+   "wrong_rate": 0.533,
+   "annoyance_rate": 0.0,
+   "offtopic_suppressed": "0/10"
+  },
+  {
+   "threshold": 0.05,
+   "routed": 32,
+   "wrong_invocations": 9,
+   "wrong_rate": 0.281,
+   "annoyance_rate": 0.4,
+   "offtopic_suppressed": "8/10"
+  },
+  {
+   "threshold": 0.1,
+   "routed": 28,
+   "wrong_invocations": 8,
+   "wrong_rate": 0.286,
+   "annoyance_rate": 0.48,
+   "offtopic_suppressed": "8/10"
+  },
+  {
+   "threshold": 0.15,
+   "routed": 16,
+   "wrong_invocations": 4,
+   "wrong_rate": 0.25,
+   "annoyance_rate": 0.72,
+   "offtopic_suppressed": "8/10"
+  },
+  {
+   "threshold": 0.2,
+   "routed": 7,
+   "wrong_invocations": 2,
+   "wrong_rate": 0.286,
+   "annoyance_rate": 0.86,
+   "offtopic_suppressed": "10/10"
+  },
+  {
+   "threshold": 0.25,
+   "routed": 4,
+   "wrong_invocations": 0,
+   "wrong_rate": 0.0,
+   "annoyance_rate": 0.92,
+   "offtopic_suppressed": "10/10"
+  },
+  {
+   "threshold": 0.3,
+   "routed": 1,
+   "wrong_invocations": 0,
+   "wrong_rate": 0.0,
+   "annoyance_rate": 0.98,
+   "offtopic_suppressed": "10/10"
+  },
+  {
+   "threshold": 0.35,
+   "routed": 0,
+   "wrong_invocations": 0,
+   "wrong_rate": 0.0,
+   "annoyance_rate": 1.0,
+   "offtopic_suppressed": "10/10"
+  },
+  {
+   "threshold": 0.4,
+   "routed": 0,
+   "wrong_invocations": 0,
+   "wrong_rate": 0.0,
+   "annoyance_rate": 1.0,
+   "offtopic_suppressed": "10/10"
+  }
+ ],
+ "rows": [
+  {
+   "query": "Why is my Linux server consuming 100% CPU?",
+   "gold": "linux",
+   "top1": "linux",
+   "top1_score": 0.22237759133733362,
+   "top2": "networking",
+   "top2_score": 0.05810209092749391,
+   "scores": {
+    "linux": 0.22237759133733362,
+    "networking": 0.05810209092749391,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "How do I restart a failed systemd service on Ubuntu?",
+   "gold": "linux",
+   "top1": "linux",
+   "top1_score": 0.04204685640941045,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.04204685640941045,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "Which command shows disk usage per directory?",
+   "gold": "linux",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "My cron job runs but produces no output, how do I debug it?",
+   "gold": "linux",
+   "top1": "linux",
+   "top1_score": 0.14492484029576375,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.14492484029576375,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "How to change file permissions recursively with chmod?",
+   "gold": "linux",
+   "top1": "linux",
+   "top1_score": 0.25101718667106815,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.25101718667106815,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "Where are kernel boot messages stored after startup?",
+   "gold": "linux",
+   "top1": "linux",
+   "top1_score": 0.14492484029576375,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.14492484029576375,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "How do I list all running processes sorted by memory?",
+   "gold": "linux",
+   "top1": "linux",
+   "top1_score": 0.14492484029576375,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.14492484029576375,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "apt update fails with a GPG error, what should I check?",
+   "gold": "linux",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "How to mount an external drive at boot with fstab?",
+   "gold": "linux",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "What does load average 8.0 mean on a 4-core machine?",
+   "gold": "linux",
+   "top1": "networking",
+   "top1_score": 0.12892034606786465,
+   "top2": "linux",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.12892034606786465,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": true
+  },
+  {
+   "query": "Is this latency spike caused by packet loss or DNS?",
+   "gold": "networking",
+   "top1": "networking",
+   "top1_score": 0.3237169428268408,
+   "top2": "linux",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.3237169428268408,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "How do I configure nginx as a reverse proxy?",
+   "gold": "networking",
+   "top1": "networking",
+   "top1_score": 0.05777766043430062,
+   "top2": "linux",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.05777766043430062,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "What does a TCP RST packet indicate during a connection?",
+   "gold": "networking",
+   "top1": "networking",
+   "top1_score": 0.19663038038660896,
+   "top2": "linux",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.19663038038660896,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "My server is unreachable by hostname but reachable by IP.",
+   "gold": "networking",
+   "top1": "networking",
+   "top1_score": 0.17279188669616924,
+   "top2": "linux",
+   "top2_score": 0.07477551914713412,
+   "scores": {
+    "linux": 0.07477551914713412,
+    "networking": 0.17279188669616924,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "How to open port 443 in the firewall for HTTPS?",
+   "gold": "networking",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": true
+  },
+  {
+   "query": "Diagnose high bandwidth usage on a network interface.",
+   "gold": "networking",
+   "top1": "cybersecurity",
+   "top1_score": 0.09759658203480975,
+   "top2": "networking",
+   "top2_score": 0.08571863053176662,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.08571863053176662,
+    "python": 0.0,
+    "cybersecurity": 0.09759658203480975,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": true
+  },
+  {
+   "query": "What is DHCP and why did my machine get a new address?",
+   "gold": "networking",
+   "top1": "networking",
+   "top1_score": 0.1484690232362446,
+   "top2": "linux",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.1484690232362446,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "How to test whether a remote port is open and listening?",
+   "gold": "networking",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": true
+  },
+  {
+   "query": "Why do traceroute hops time out in the middle of the path?",
+   "gold": "networking",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": true
+  },
+  {
+   "query": "How to set up a static route for a second subnet?",
+   "gold": "networking",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": true
+  },
+  {
+   "query": "How do I fix a ValueError when parsing dates in pandas?",
+   "gold": "python",
+   "top1": "python",
+   "top1_score": 0.15310206867551912,
+   "top2": "linux",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.15310206867551912,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "What does the traceback 'list index out of range' mean?",
+   "gold": "python",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "How to create a virtual environment and install requirements?",
+   "gold": "python",
+   "top1": "python",
+   "top1_score": 0.048124625254015584,
+   "top2": "linux",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.048124625254015584,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "Why is my dict lookup slow inside a large loop?",
+   "gold": "python",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "How do I read a CSV file with NumPy?",
+   "gold": "python",
+   "top1": "python",
+   "top1_score": 0.08839352056329954,
+   "top2": "linux",
+   "top2_score": 0.08367239555702272,
+   "scores": {
+    "linux": 0.08367239555702272,
+    "networking": 0.0,
+    "python": 0.08839352056329954,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "pip install fails with SSL certificate errors, how to fix?",
+   "gold": "python",
+   "top1": "python",
+   "top1_score": 0.16181867611265044,
+   "top2": "linux",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.16181867611265044,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "How to catch multiple exception types in one except block?",
+   "gold": "python",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "What is the difference between a list and a tuple?",
+   "gold": "python",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "How do I plot two lines with matplotlib and a legend?",
+   "gold": "python",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "Why does my recursive function hit RecursionError?",
+   "gold": "python",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "Are repeated SSH login failures a brute-force attack?",
+   "gold": "cybersecurity",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "How to tell if high CPU usage is caused by malware?",
+   "gold": "cybersecurity",
+   "top1": "cybersecurity",
+   "top1_score": 0.08724652013387035,
+   "top2": "linux",
+   "top2_score": 0.056398419202772436,
+   "scores": {
+    "linux": 0.056398419202772436,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.08724652013387035,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "What are indicators of a DDoS attack in nginx access logs?",
+   "gold": "cybersecurity",
+   "top1": "cybersecurity",
+   "top1_score": 0.16416585622753482,
+   "top2": "networking",
+   "top2_score": 0.06198193615162321,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.06198193615162321,
+    "python": 0.0,
+    "cybersecurity": 0.16416585622753482,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "A user reports a suspicious login from another country.",
+   "gold": "cybersecurity",
+   "top1": "cybersecurity",
+   "top1_score": 0.11953091331248175,
+   "top2": "linux",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.11953091331248175,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "How to check a binary for known malware signatures?",
+   "gold": "cybersecurity",
+   "top1": "cybersecurity",
+   "top1_score": 0.11953091331248175,
+   "top2": "linux",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.11953091331248175,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "What steps follow a suspected credential leak?",
+   "gold": "cybersecurity",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "How to detect ARP spoofing on a local network?",
+   "gold": "cybersecurity",
+   "top1": "cybersecurity",
+   "top1_score": 0.16904223872935442,
+   "top2": "linux",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.16904223872935442,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "Is an unexpected outbound connection a sign of compromise?",
+   "gold": "cybersecurity",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "How to audit sudo usage for privilege escalation attempts?",
+   "gold": "cybersecurity",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "What is the incident response process for ransomware?",
+   "gold": "cybersecurity",
+   "top1": "cybersecurity",
+   "top1_score": 0.26173956040161106,
+   "top2": "linux",
+   "top2_score": 0.056398419202772436,
+   "scores": {
+    "linux": 0.056398419202772436,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.26173956040161106,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "My Debian server has high CPU, nginx is running, is it a network attack?",
+   "gold": "cybersecurity",
+   "top1": "networking",
+   "top1_score": 0.11406076936049991,
+   "top2": "linux",
+   "top2_score": 0.11133796413060115,
+   "scores": {
+    "linux": 0.11133796413060115,
+    "networking": 0.11406076936049991,
+    "python": 0.0,
+    "cybersecurity": 0.09587838065436502,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "A Python script saturates one CPU core on the server.",
+   "gold": "python",
+   "top1": "python",
+   "top1_score": 0.19725853119159856,
+   "top2": "linux",
+   "top2_score": 0.14039356455280838,
+   "scores": {
+    "linux": 0.14039356455280838,
+    "networking": 0.06376308673116328,
+    "python": 0.19725853119159856,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "SSH logins are slow; is it DNS or an attack?",
+   "gold": "cybersecurity",
+   "top1": "cybersecurity",
+   "top1_score": 0.12763814025314546,
+   "top2": "networking",
+   "top2_score": 0.08452638700886062,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.08452638700886062,
+    "python": 0.0,
+    "cybersecurity": 0.12763814025314546,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "nginx returns 502 after I deployed a Python app.",
+   "gold": "networking",
+   "top1": "python",
+   "top1_score": 0.23698394238727544,
+   "top2": "networking",
+   "top2_score": 0.09618770850903878,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.09618770850903878,
+    "python": 0.23698394238727544,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": true
+  },
+  {
+   "query": "A cron job running a backup script fills the disk overnight.",
+   "gold": "linux",
+   "top1": "linux",
+   "top1_score": 0.14492484029576375,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.14492484029576375,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "pip download speeds are very slow on this machine.",
+   "gold": "networking",
+   "top1": "python",
+   "top1_score": 0.13294336587603697,
+   "top2": "linux",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.13294336587603697,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "Suspicious process listens on an open port; how to investigate?",
+   "gold": "linux",
+   "top1": "cybersecurity",
+   "top1_score": 0.10186225462068665,
+   "top2": "linux",
+   "top2_score": 0.06584641001408591,
+   "scores": {
+    "linux": 0.06584641001408591,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.10186225462068665,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": true
+  },
+  {
+   "query": "Python requests to an HTTPS endpoint fail with certificate errors.",
+   "gold": "python",
+   "top1": "python",
+   "top1_score": 0.2659736148093492,
+   "top2": "linux",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.2659736148093492,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": true,
+   "top2_correct": true
+  },
+  {
+   "query": "Firewall blocks my Python package mirror; what rule to add?",
+   "gold": "networking",
+   "top1": "python",
+   "top1_score": 0.218011923934187,
+   "top2": "linux",
+   "top2_score": 0.11455568925056193,
+   "scores": {
+    "linux": 0.11455568925056193,
+    "networking": 0.0,
+    "python": 0.218011923934187,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "Audit logs show odd sudo calls from a service account.",
+   "gold": "cybersecurity",
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "What is a good recipe for sourdough bread?",
+   "gold": null,
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "Who won the football match last night?",
+   "gold": null,
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "Suggest a three-day itinerary for Rome.",
+   "gold": null,
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "How do I knit a sweater for beginners?",
+   "gold": null,
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "What is the capital of Assyria in ancient history?",
+   "gold": null,
+   "top1": "general",
+   "top1_score": 0.19159589825174217,
+   "top2": "linux",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.19159589825174217
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "Tips for photographing the northern lights?",
+   "gold": null,
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "How to care for a new houseplant?",
+   "gold": null,
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "Recommend a science fiction novel about space travel.",
+   "gold": null,
+   "top1": "general",
+   "top1_score": 0.19159589825174217,
+   "top2": "linux",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.19159589825174217
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "What are the rules of chess castling?",
+   "gold": null,
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  },
+  {
+   "query": "How to plan a wedding on a small budget?",
+   "gold": null,
+   "top1": "linux",
+   "top1_score": 0.0,
+   "top2": "networking",
+   "top2_score": 0.0,
+   "scores": {
+    "linux": 0.0,
+    "networking": 0.0,
+    "python": 0.0,
+    "cybersecurity": 0.0,
+    "general": 0.0
+   },
+   "top1_correct": false,
+   "top2_correct": false
+  }
+ ]
+}

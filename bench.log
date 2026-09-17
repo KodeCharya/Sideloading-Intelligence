@@ -1,0 +1,47 @@
+bench start
+12:47:01 baseline RSS=412.6 MB threads=4
+12:47:15 skill-small WARM done n=12
+12:47:19 skill-small cold rep 1/12 load=0.7s tok1=0.0s
+12:47:22 skill-small cold rep 2/12 load=0.7s tok1=0.0s
+12:47:26 skill-small cold rep 3/12 load=0.7s tok1=0.0s
+12:47:29 skill-small cold rep 4/12 load=0.7s tok1=0.0s
+12:47:33 skill-small cold rep 5/12 load=0.7s tok1=0.0s
+12:47:36 skill-small cold rep 6/12 load=0.7s tok1=0.0s
+12:47:40 skill-small cold rep 7/12 load=0.7s tok1=0.0s
+12:47:43 skill-small cold rep 8/12 load=0.7s tok1=0.0s
+12:47:46 skill-small cold rep 9/12 load=0.7s tok1=0.0s
+12:47:50 skill-small cold rep 10/12 load=0.7s tok1=0.0s
+12:47:53 skill-small cold rep 11/12 load=0.7s tok1=0.0s
+12:47:56 skill-small cold rep 12/12 load=0.7s tok1=0.0s
+12:47:56 skill-small warm_load_med=0.71s cold_load_med=0.686s rss~790.2MB
+12:48:23 skill-mid WARM done n=12
+12:48:27 skill-mid cold rep 1/12 load=1.5s tok1=0.2s
+12:48:32 skill-mid cold rep 2/12 load=1.6s tok1=0.2s
+12:48:37 skill-mid cold rep 3/12 load=1.6s tok1=0.1s
+12:48:42 skill-mid cold rep 4/12 load=1.6s tok1=0.1s
+12:48:46 skill-mid cold rep 5/12 load=1.6s tok1=0.1s
+12:48:51 skill-mid cold rep 6/12 load=1.6s tok1=0.1s
+12:48:56 skill-mid cold rep 7/12 load=1.6s tok1=0.1s
+12:49:01 skill-mid cold rep 8/12 load=1.5s tok1=0.1s
+12:49:05 skill-mid cold rep 9/12 load=1.5s tok1=0.1s
+12:49:09 skill-mid cold rep 10/12 load=1.5s tok1=0.1s
+12:49:13 skill-mid cold rep 11/12 load=1.5s tok1=0.1s
+12:49:19 skill-mid cold rep 12/12 load=1.7s tok1=0.1s
+12:49:19 skill-mid warm_load_med=1.49s cold_load_med=1.569s rss~1794.3MB
+12:50:11 brain WARM done n=12
+12:50:17 brain cold rep 1/12 load=1.9s tok1=0.9s
+12:50:23 brain cold rep 2/12 load=2.0s tok1=1.2s
+12:50:28 brain cold rep 3/12 load=2.0s tok1=0.9s
+12:50:34 brain cold rep 4/12 load=1.9s tok1=1.0s
+12:50:40 brain cold rep 5/12 load=2.0s tok1=1.1s
+12:50:46 brain cold rep 6/12 load=1.9s tok1=1.1s
+12:50:52 brain cold rep 7/12 load=2.0s tok1=1.1s
+12:50:58 brain cold rep 8/12 load=2.0s tok1=1.1s
+12:51:04 brain cold rep 9/12 load=1.9s tok1=0.9s
+12:51:10 brain cold rep 10/12 load=1.9s tok1=1.3s
+12:51:16 brain cold rep 11/12 load=1.9s tok1=1.0s
+12:51:21 brain cold rep 12/12 load=1.9s tok1=0.9s
+12:51:21 brain warm_load_med=1.966s cold_load_med=1.944s rss~2571.2MB
+12:51:21 memory residency test start
+12:51:38 memory: {'baseline_rss_mb': 359.0, 'brain_rss_mb': 2571.4, 'brain_plus_kv64_rss_mb': 2573.0, 'brain_skill1_rss_mb': 2900.6, 'brain_skill1_skill2_rss_mb': 4319.1, 'after_free_rss_mb': 361.9}
+12:51:38 ALL DONE

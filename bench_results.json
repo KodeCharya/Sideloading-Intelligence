@@ -1,0 +1,184 @@
+{
+ "prompt": "Why is my Linux server consuming 100% CPU?",
+ "reps": 12,
+ "torch": "2.14.0+cpu",
+ "baseline_rss_mb": 412.6,
+ "models": {
+  "distilgpt2": {
+   "warm": {
+    "load_s": {
+     "n": 12,
+     "mean": 0.706,
+     "median": 0.71,
+     "stdev": 0.012,
+     "min": 0.677,
+     "max": 0.72
+    },
+    "first_token_s": {
+     "n": 12,
+     "mean": 0.028,
+     "median": 0.026,
+     "stdev": 0.006,
+     "min": 0.022,
+     "max": 0.041
+    },
+    "total_s": {
+     "n": 12,
+     "mean": 0.733,
+     "median": 0.733,
+     "stdev": 0.015,
+     "min": 0.7,
+     "max": 0.756
+    },
+    "rss_after_load_mb": 790.1
+   },
+   "cold": {
+    "load_s": {
+     "n": 12,
+     "mean": 0.691,
+     "median": 0.686,
+     "stdev": 0.018,
+     "min": 0.664,
+     "max": 0.725
+    },
+    "first_token_s": {
+     "n": 12,
+     "mean": 0.029,
+     "median": 0.028,
+     "stdev": 0.005,
+     "min": 0.023,
+     "max": 0.037
+    },
+    "total_s": {
+     "n": 12,
+     "mean": 0.719,
+     "median": 0.716,
+     "stdev": 0.019,
+     "min": 0.688,
+     "max": 0.757
+    },
+    "rss_after_load_mb": 790.2
+   }
+  },
+  "gpt2-medium": {
+   "warm": {
+    "load_s": {
+     "n": 12,
+     "mean": 1.506,
+     "median": 1.49,
+     "stdev": 0.041,
+     "min": 1.455,
+     "max": 1.561
+    },
+    "first_token_s": {
+     "n": 12,
+     "mean": 0.113,
+     "median": 0.103,
+     "stdev": 0.018,
+     "min": 0.101,
+     "max": 0.155
+    },
+    "total_s": {
+     "n": 12,
+     "mean": 1.619,
+     "median": 1.61,
+     "stdev": 0.049,
+     "min": 1.555,
+     "max": 1.712
+    },
+    "rss_after_load_mb": 1895.0
+   },
+   "cold": {
+    "load_s": {
+     "n": 12,
+     "mean": 1.556,
+     "median": 1.569,
+     "stdev": 0.057,
+     "min": 1.473,
+     "max": 1.689
+    },
+    "first_token_s": {
+     "n": 12,
+     "mean": 0.141,
+     "median": 0.138,
+     "stdev": 0.022,
+     "min": 0.109,
+     "max": 0.185
+    },
+    "total_s": {
+     "n": 12,
+     "mean": 1.697,
+     "median": 1.709,
+     "stdev": 0.067,
+     "min": 1.582,
+     "max": 1.83
+    },
+    "rss_after_load_mb": 1794.3
+   }
+  },
+  "TinyLlama/TinyLlama-1.1B-Chat-v1.0": {
+   "warm": {
+    "load_s": {
+     "n": 12,
+     "mean": 1.991,
+     "median": 1.966,
+     "stdev": 0.073,
+     "min": 1.935,
+     "max": 2.207
+    },
+    "first_token_s": {
+     "n": 12,
+     "mean": 1.14,
+     "median": 1.122,
+     "stdev": 0.097,
+     "min": 1.005,
+     "max": 1.389
+    },
+    "total_s": {
+     "n": 12,
+     "mean": 3.132,
+     "median": 3.097,
+     "stdev": 0.154,
+     "min": 2.984,
+     "max": 3.597
+    },
+    "rss_after_load_mb": 2571.2
+   },
+   "cold": {
+    "load_s": {
+     "n": 12,
+     "mean": 1.947,
+     "median": 1.944,
+     "stdev": 0.025,
+     "min": 1.901,
+     "max": 2.0
+    },
+    "first_token_s": {
+     "n": 12,
+     "mean": 1.048,
+     "median": 1.06,
+     "stdev": 0.128,
+     "min": 0.896,
+     "max": 1.275
+    },
+    "total_s": {
+     "n": 12,
+     "mean": 2.995,
+     "median": 3.001,
+     "stdev": 0.138,
+     "min": 2.81,
+     "max": 3.22
+    },
+    "rss_after_load_mb": 2571.2
+   }
+  }
+ },
+ "memory": {
+  "baseline_rss_mb": 359.0,
+  "brain_rss_mb": 2571.4,
+  "brain_plus_kv64_rss_mb": 2573.0,
+  "brain_skill1_rss_mb": 2900.6,
+  "brain_skill1_skill2_rss_mb": 4319.1,
+  "after_free_rss_mb": 361.9
+ }
+}

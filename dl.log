@@ -1,0 +1,8 @@
+download start
+12:30:09 START distilgpt2
+12:30:14 DONE distilgpt2 -> C:\Users\MUKESH\.cache\huggingface\hub\models--distilgpt2\snapshots\2290a62682d06624634c1f46a6ad5be0f47f38aa
+12:30:14 START gpt2-medium
+12:30:31 DONE gpt2-medium -> C:\Users\MUKESH\.cache\huggingface\hub\models--gpt2-medium\snapshots\6dcaa7a952f72f9298047fd5137cd6e4f05f41da
+12:30:31 START TinyLlama/TinyLlama-1.1B-Chat-v1.0
+12:30:31 DONE TinyLlama/TinyLlama-1.1B-Chat-v1.0 -> C:\Users\MUKESH\.cache\huggingface\hub\models--TinyLlama--TinyLlama-1.1B-Chat-v1.0\snapshots\fe8a4ea1ffedaf415f4da2f062534de366a451e6
+12:30:31 ALL DONE
